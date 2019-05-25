@@ -1,10 +1,10 @@
 # Site settings
-title: link Blog
-SEOTitle: 徐燎燎的博客 | link Blog
+title: Link Blog
+SEOTitle: 徐燎燎的博客 | Link Blog
 header-img: img/post-skyrim-desk.jpg
 email: link.xu@ximalaya.com
 description: "春江潮水连海平"
-keyword: "link, link Blog, 徐燎燎的博客, xuliaoliao, Java, Web"
+keyword: "Link, Link Blog, 徐燎燎的博客, xuliaoliao, Java, Web"
 url: "http://liaoliaoxu.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/liaoliaoxu/liaoliaoxu.github.io.git" # you code repository
