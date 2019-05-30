@@ -107,7 +107,29 @@ tags:
             .calories(100).sodium(35).build();
    ```
 
+## 单例模式实现方法
+
+1. 公有域 简单
+2. 静态工厂方法 安全灵活
+3. 单元素枚举 最好
+
+```java
+public enum Elvis{
+    INSTANCE;
+
+    public void leaveTheBuilding(){}
+}
+```
+
+## 提供static函数的工具类
+
+1. 显示私有构造，防止被实例化
+
 ## 一些小点与疑问
 
 1. 类不可见与线程安全？
 2. 服务提供者框架
+
+## butler中的一个教训
+
+1. 使用最新版本有风险，在最初尝试是应该套用原有的成熟的版本和配置（mybatisplus）
