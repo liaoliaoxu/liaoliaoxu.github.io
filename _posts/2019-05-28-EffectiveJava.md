@@ -135,12 +135,38 @@ public enum Elvis{
 
 1. 显示私有构造，防止被实例化
 
+## 清除过期对象引用
+
+### 内存泄漏
+
+1. 维护过期引用，pop返回之后，元素还被elements数组引用
+
+    ```java
+    public Object pop(){
+        if(size==0)
+            throw new EmptyStackException;
+        //error
+        return elements[--size];
+        //replace
+        Object element = elements[--size];
+        elements[size] == null;
+        return element
+    }
+    ```
+
+2. 缓存。过期时间清除，或者新增项目时显示清除
+
+3. 监听器与其他回调。API回调与弱引用
+
 ---
+
 ## 一些小点与疑问
 
 1. 类不可见与线程安全？
 2. 服务提供者框架
+
 ---
+
 ## butler中的一个教训
 
 1. 使用最新版本有风险，在最初尝试是应该套用原有的成熟的版本和配置（mybatisplus）
