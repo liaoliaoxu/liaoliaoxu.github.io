@@ -58,7 +58,7 @@ tags:
 
 1. 少用注释(需要额外精力阅读，且常忘记维护)
 
-    ![comment](../img/bad_comment.jpg)
+    ![comment](/img/bad_comment.jpg)
 
 2. 适用注释的场景
    1. 法律信息
