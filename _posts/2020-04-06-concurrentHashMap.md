@@ -19,13 +19,13 @@ tags:
 3. 插入时首先计算index，然后插入table[index]链表末尾/或者插入红黑树
 4. 并发时锁的粒度在Node<k,v> f = table[index]，即锁住整个链表/红黑树
 
-![table](./table.png)
+![table](/img/post-concurrent-node.png)
 
 ## put方法如何处理并发问题？
 
 采取的方法是锁住链表头节点/红黑树根节点
 
-![flow](./flow.png)
+![flow](/img/post-concurrent-flow.png)
 
 ## 与service-cache的异同
 
